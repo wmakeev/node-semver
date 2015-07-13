@@ -4,7 +4,8 @@
   "description": "The semantic version parser used by npm.",
   "main": "semver.js",
   "scripts": {
-    "test": "tap test/*.js"
+    "test": "tap test/*.js",
+    "bundle": "webpack semver.js dist/semver.js --output-library semver --output-library-target umd"
   },
   "devDependencies": {
     "tap": "^1.2.0",
